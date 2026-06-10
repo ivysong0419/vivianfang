@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listings | Vivian Fang Real Estate</title>
+  <meta name="description" content="Browse Southern California real estate listings with Vivian Fang.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="/" class="logo">
+        Vivian Fang
+        <span>Real Estate</span>
+      </a>
+      <button class="mobile-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="listings.html">Listings</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <h1>Property Listings</h1>
+    <p>Explore available homes across Southern California</p>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="filter-bar">
+        <select id="filterStatus">
+          <option value="any">All Status</option>
+          <option value="active">Active</option>
+          <option value="pending">Pending</option>
+          <option value="sold">Sold</option>
+        </select>
+        <select id="filterBed">
+          <option value="any">Any Bedrooms</option>
+          <option value="1">1 Bed</option>
+          <option value="2">2 Beds</option>
+          <option value="3">3 Beds</option>
+          <option value="4">4+ Beds</option>
+        </select>
+        <select id="filterPrice">
+          <option value="any">Any Price</option>
+          <option value="0-500000">Under $500k</option>
+          <option value="500000-1000000">$500k - $1M</option>
+          <option value="1000000-1500000">$1M - $1.5M</option>
+          <option value="1500000">$1.5M+</option>
+        </select>
+      </div>
+
+      <div class="listings-grid" id="listingsGrid">
+        <div class="listing-card" data-price="850000" data-beds="3" data-status="active">
+          <div class="listing-image">📍 Photo Coming Soon</div>
+          <div class="listing-info">
+            <div class="listing-price">$850,000</div>
+            <div class="listing-address">1234 Ocean View Dr<br>Los Angeles, CA 90001</div>
+            <div class="listing-details">
+              <span>🛏 3 Beds</span>
+              <span>🚿 2 Baths</span>
+              <span>📐 1,850 sqft</span>
+            </div>
+            <a href="contact.html" class="listing-link">Inquire About This Property →</a>
+          </div>
+        </div>
+
+        <div class="listing-card" data-price="1250000" data-beds="4" data-status="active">
+          <div class="listing-image">📍 Photo Coming Soon</div>
+          <div class="listing-info">
+            <div class="listing-price">$1,250,000</div>
+            <div class="listing-address">5678 Sunset Blvd<br>Beverly Hills, CA 90210</div>
+            <div class="listing-details">
+              <span>🛏 4 Beds</span>
+              <span>🚿 3 Baths</span>
+              <span>📐 2,400 sqft</span>
+            </div>
+            <a href="contact.html" class="listing-link">Inquire About This Property →</a>
+          </div>
+        </div>
+
+        <div class="listing-card" data-price="675000" data-beds="2" data-status="pending">
+          <div class="listing-image">📍 Photo Coming Soon</div>
+          <div class="listing-info">
+            <div class="listing-price">$675,000</div>
+            <div class="listing-address">9101 Maple Ave<br>Pasadena, CA 91101</div>
+            <div class="listing-details">
+              <span>🛏 2 Beds</span>
+              <span>🚿 1 Bath</span>
+              <span>📐 1,100 sqft</span>
+            </div>
+            <a href="contact.html" class="listing-link">Inquire About This Property →</a>
+          </div>
+        </div>
+
+        <div class="listing-card" data-price="1500000" data-beds="5" data-status="active">
+          <div class="listing-image">📍 Photo Coming Soon</div>
+          <div class="listing-info">
+            <div class="listing-price">$1,500,000</div>
+            <div class="listing-address">2468 Hillside Rd<br>Irvine, CA 92602</div>
+            <div class="listing-details">
+              <span>🛏 5 Beds</span>
+              <span>🚿 4 Baths</span>
+              <span>📐 3,200 sqft</span>
+            </div>
+            <a href="contact.html" class="listing-link">Inquire About This Property →</a>
+          </div>
+        </div>
+
+        <div class="listing-card" data-price="725000" data-beds="3" data-status="sold">
+          <div class="listing-image">📍 Photo Coming Soon</div>
+          <div class="listing-info">
+            <div class="listing-price">$725,000</div>
+            <div class="listing-address">3579 Oak St<br>San Diego, CA 92101</div>
+            <div class="listing-details">
+              <span>🛏 3 Beds</span>
+              <span>🚿 2 Baths</span>
+              <span>📐 1,600 sqft</span>
+            </div>
+            <span style="color:var(--text-light);font-size:0.85rem;">Sold</span>
+          </div>
+        </div>
+
+        <div class="listing-card" data-price="1100000" data-beds="4" data-status="active">
+          <div class="listing-image">📍 Photo Coming Soon</div>
+          <div class="listing-info">
+            <div class="listing-price">$1,100,000</div>
+            <div class="listing-address">1357 Pacific Ave<br>Long Beach, CA 90802</div>
+            <div class="listing-details">
+              <span>🛏 4 Beds</span>
+              <span>🚿 3 Baths</span>
+              <span>📐 2,100 sqft</span>
+            </div>
+            <a href="contact.html" class="listing-link">Inquire About This Property →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          Vivian Fang
+          <span>Real Estate</span>
+        </div>
+        <p>Dedicated to helping you find the perfect home in Southern California. Professional, personal, and passionate about real estate.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="listings.html">Listings</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <a href="tel:6265605179">626-560-5179</a>
+        <a href="#">Southern California</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2024 Vivian Fang Real Estate. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
